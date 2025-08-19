@@ -1,40 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
 vector<int> v;
+int ans[1000001];
+int n;
 stack<int> s;
-
-void insert(){
-    for(int i = 0; i < repeat; i++){
-        if(s.top() < v[i]){
-            s.push(v[i]);
-            cout << s.top();
-        }
-        else if(s.top() >= v[i]){
-            insert();
-            cout s.top();
-        }
-    }
-
-}
 
 int main()
 {
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    int repeat;
-    cin >> repeat;
+    cin >> n;
     
-    
-
-    for(int i = 0; i < repeat; i++){
+    for(int i = 0; i < n; i++){
         int a;
         cin >> a; 
         v.push_back(a);
     }
 
-    
-    insert();
+    for (int i = 0; i < n; i++) {
+        while (!s.empty() && v[s.top()] < v[i]) {
+            ans[s.top()] = v[i];
+            s.pop();
+        }
+        s.push(i);
+    }
+
+    while (!s.empty()) {
+        ans[s.top()] = -1;
+        s.pop();
+    }
+
+    for (int i = 0; i < n; i++) {
+        cout << ans[i] << " ";
+    }
     
     return 0;
 }
