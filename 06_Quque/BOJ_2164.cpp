@@ -19,8 +19,6 @@ int main()
     }
 
     while (q.size() > 1) {
-                //cout << q.front() << q.back() << "\n";
-
         q.pop();
         q.push(q.front());
         q.pop();

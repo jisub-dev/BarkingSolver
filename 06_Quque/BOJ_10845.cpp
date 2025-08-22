@@ -50,9 +50,7 @@ int main()
             else
                 cout << q.back() << "\n";
         }
-
     } 
-
 
     return 0;
 }
