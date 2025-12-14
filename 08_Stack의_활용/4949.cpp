@@ -17,11 +17,8 @@ int main()
         }
 
         for (int i = 0; i < str.length(); i++) {
-            if (str[i] == '[') {
+            if (str[i] == '[' || str[i] == '(') {
                 st.push('[');
-            }
-            else if (str[i] == '(') {
-                st.push('(');
             }
             else if (str[i] == ')') {
                 if (st.empty() || st.top() != '(') {
@@ -49,7 +46,6 @@ int main()
             cout << "yes\n";
         }
     }
-
 
     return 0;
 }

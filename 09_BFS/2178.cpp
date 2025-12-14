@@ -13,6 +13,7 @@ int main()
 
     int n, m;
     string temp;
+    
     cin >> n >> m;
     for (int i = 0; i < n; i++) {
         cin >> temp;
@@ -36,21 +37,6 @@ int main()
             q.push({nx, ny});
         }
     }
-
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            cout << adj[i][j] << " ";
-        }
-        cout << "\n\n";
-    }
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            cout << vis[i][j] << " ";
-        }
-        cout << "\n";
-    }
-
-
     cout << vis[n - 1][m - 1];
     return 0;
 }
