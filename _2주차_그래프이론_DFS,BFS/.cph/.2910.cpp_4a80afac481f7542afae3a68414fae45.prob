@@ -1,0 +1,1 @@
+{"name":"Local: 2910","url":"/Users/gimjiseob/Projects/BarkingSolver/_2주차_그래프이론_DFS,BFS/2910.cpp","tests":[{"id":1767953102364,"input":"5 2\n2 1 2 1 2","output":"2 2 2 1 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/gimjiseob/Projects/BarkingSolver/_2주차_그래프이론_DFS,BFS/2910.cpp","group":"local","local":true}
