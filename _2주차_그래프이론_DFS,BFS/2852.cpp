@@ -21,10 +21,17 @@ int main() {
         tems += (temm * 60);
         s = tems;
         int gap;
-        
-        gap = s - pre;
-        pre = s;
-        
+        if (pre == 0) {
+            pre = s;
+            if (win == 1) s1++;
+            else s2++;
+            continue;
+        }
+        else {
+            gap = s - pre;
+            pre = s;
+        }
+
         if(s1 > s2){
             tim1 += gap;
         } else if (s1 < s2) {
