@@ -34,7 +34,7 @@ int main() {
                 exit(0);
             }
             for (int i = 0; i < 4; i++) {
-                    int ny = fro.first + dy[i];
+                     int ny = fro.first + dy[i];
                     int nx = fro.second + dx[i];
                     if (ny < r && ny > -1 && nx < c && nx > -1 && !bak_vis[ny][nx]) {
                         if (a[ny][nx] == 'X'){    

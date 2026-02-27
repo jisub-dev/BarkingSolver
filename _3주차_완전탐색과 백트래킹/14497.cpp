@@ -46,7 +46,7 @@ int main() {
                     if (a[ny][nx] == 0) {
                         q.push({ny, nx});
                         vis[ny][nx] = 1;
-                    } 
+                    }  
                     else if (a[ny][nx] == 1) {
                         temp.push_back({ny, nx});
                     }
